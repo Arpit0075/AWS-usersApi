@@ -1,13 +1,74 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.create {
+  height: 100%;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+.create > input {
+  display: block;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  width: 80%;
+}
+.create > h3 {
+  padding: 0.2rem;
+  margin-bottom: 1rem;
+}
+.create > button {
+  padding: 0.8rem;
+  background-color: rgba(255, 0, 0, 0.76);
+  color: white;
+  border-radius: 0.7rem;
+  cursor: pointer;
+}
+
+.home {
+  padding: 1rem;
+}
+
+.users {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding: 1rem;
+  margin: 1rem;
+}
+.buttons-users {
+  margin-top: 0.5rem;
+}
+.buttons-users > button {
+  margin-left: 0.3rem;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.buttons-users > button > a {
+  text-decoration: none;
+}
+.user-container {
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+.user {
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px solid black;
+  background-color: lightcyan;
+}
+
+.user > button {
+  margin-top: 0.5rem;
+  cursor: pointer;
+  padding: 0.4rem;
+  border-radius: 0.6rem;
 }
