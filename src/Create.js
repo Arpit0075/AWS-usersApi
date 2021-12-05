@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 function Create() {
-  const [state, setState] = useState({ id: "", name: "", message: "" });
+  const [state, setState] = useState({ id: "", userName: "", message: "" });
   const [message, setMessage] = useState("");
 
   const handleChange = (e) => {
@@ -20,7 +20,7 @@ function Create() {
       //console.log(res.data.message);
 
       setMessage(res.data.message);
-      setState({ ...state, id: "", name: "", message: "" });
+      setState({ ...state, id: "", userName: "", message: "" });
       setTimeout(() => {
         setMessage("");
       }, 3000);
@@ -47,8 +47,8 @@ function Create() {
         type="text"
         placeholder="enter name"
         onChange={handleChange}
-        value={state.name}
-        name="name"
+        value={state.userName}
+        name="userName"
       />
       <input
         type="text"
