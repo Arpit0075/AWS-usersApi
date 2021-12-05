@@ -24,7 +24,7 @@ function Home() {
       {users.map((u) => {
         return (
           <div className="users" key={u.id}>
-            <h4> {u.name} </h4>
+            <h4> {u.userName} </h4>
             <p>{u.message}</p>
             <div className="buttons-users">
               <button>

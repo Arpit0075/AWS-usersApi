@@ -71,4 +71,18 @@
   cursor: pointer;
   padding: 0.4rem;
   border-radius: 0.6rem;
+  margin-right: 1rem;
+}
+
+.updateUser {
+  margin-top: 1rem;
+}
+.updateUser > input {
+  display: block;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+.updateUser > button {
+  padding: 0.5rem;
+  cursor: pointer;
 }
