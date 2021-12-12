@@ -20,20 +20,22 @@ function Home() {
 
   return (
     <div className="home">
-      <h1>Users Data</h1>
-      {users.map((u) => {
-        return (
-          <div className="users" key={u.id}>
-            <h4> {u.userName} </h4>
-            <p>{u.message}</p>
-            <div className="buttons-users">
-              <button>
-                <Link to={`/${u.id}`}> Details</Link>
-              </button>
+      <h1 style={{ textAlign: "center" }}>Users Data</h1>
+      <div className="users-container">
+        {users.map((u) => {
+          return (
+            <div className="users" key={u.id}>
+              <h4> {u.userName} </h4>
+              <p>{u.message}</p>
+              <div className="buttons-users">
+                <button>
+                  <Link to={`/${u.id}`}> Details</Link>
+                </button>
+              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </div>
   );
 }

@@ -58,7 +58,7 @@ function User() {
 
   return (
     <div className="user-container">
-      <h1> User Data</h1>
+      <h1 style={{ textAlign: "center" }}> User Data</h1>
       <div className="user">
         <h4> {user.userName} </h4>
         <p>{user.message}</p>
@@ -75,7 +75,7 @@ function User() {
         />
         <input
           type="text"
-          placeholder="enter mnew Mssage"
+          placeholder="enter new Mssage"
           onChange={handleChange}
           value={state.newMessage}
           name="newMessage"
